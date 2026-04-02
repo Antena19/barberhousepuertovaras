@@ -190,41 +190,59 @@
       </div>
     </section>
 
-    <section id="galeria" class="section section--gallery">
-      <div class="container">
-        <header class="section__head">
-          <h2 class="section__title">Galería</h2>
-          <p class="section__lead">Ambiente y estilo — próximamente trabajos propios del equipo.</p>
+    <section id="galeria" class="section section--gallery" aria-labelledby="galeria-title">
+      <!--
+        Widget Instagram: pega aquí el script del proveedor dentro de #instagram-feed.
+        Luego añade la clase "section--gallery--embed" a este <section> para mostrar el embed
+        y ocultar la galería manual (.gallery-manual) y el botón "Ver más en Instagram".
+      -->
+      <div class="container container--gallery">
+        <header class="gallery__head">
+          <h2 id="galeria-title" class="gallery__title">Galería</h2>
+          <p class="gallery__subtitle">Mira algunos de nuestros resultados</p>
         </header>
-        <div class="gallery-grid">
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=600&q=80" alt="Interior de barbería con sillón clásico" width="600" height="600" loading="lazy" />
-            <span class="gallery-item__overlay" aria-hidden="true"></span>
-          </a>
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-            <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=600&q=80" alt="Herramientas de barbero" width="600" height="600" loading="lazy" />
-            <span class="gallery-item__overlay" aria-hidden="true"></span>
-          </a>
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-            <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=600&q=80" alt="Corte y detalle de barba" width="600" height="600" loading="lazy" />
-            <span class="gallery-item__overlay" aria-hidden="true"></span>
-          </a>
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-            <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=600&q=80" alt="Estación de trabajo barbería" width="600" height="600" loading="lazy" />
-            <span class="gallery-item__overlay" aria-hidden="true"></span>
-          </a>
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-            <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=600&q=80" alt="Cliente en servicio de barbería" width="600" height="600" loading="lazy" />
-            <span class="gallery-item__overlay" aria-hidden="true"></span>
-          </a>
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-            <img src="https://images.unsplash.com/photo-1622287162866-efae8b7c8e8a?auto=format&fit=crop&w=600&q=80" alt="Productos y acabado premium" width="600" height="600" loading="lazy" />
-            <span class="gallery-item__overlay" aria-hidden="true"></span>
-          </a>
+
+        <div id="instagram-feed" class="instagram-feed">
+          <!-- Aquí se insertará el widget de Instagram -->
         </div>
-        <p class="gallery-instagram">
-          <a href="https://www.instagram.com/jisus._barberstyle/" class="btn btn--outline-light" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a>
-        </p>
+
+        <div class="gallery-manual">
+          <div class="gallery-grid">
+            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Interior de barbería" width="800" height="600" loading="lazy" />
+              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
+            </a>
+            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Herramientas de barbero" width="800" height="600" loading="lazy" />
+              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
+            </a>
+            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Corte y barba" width="800" height="600" loading="lazy" />
+              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
+            </a>
+            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Estación de barbería" width="800" height="600" loading="lazy" />
+              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
+            </a>
+            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Servicio de corte" width="800" height="600" loading="lazy" />
+              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
+            </a>
+            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
+              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" alt="Cuidado y estilo" width="800" height="600" loading="lazy" />
+              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="gallery-instagram-btn-wrap">
+          <a href="https://www.instagram.com/jisus._barberstyle/" class="btn btn--gallery-ig" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a>
+        </div>
+
+        <div class="gallery__cta">
+          <p class="gallery__cta-text">¿Listo para tu próximo look?</p>
+          <a href="#" class="btn btn--gallery-book" data-booking>Reservar ahora</a>
+        </div>
       </div>
     </section>
 
