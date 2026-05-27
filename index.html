@@ -45,10 +45,10 @@
   </header>
 
   <main>
-    <section id="inicio" class="hero" aria-label="Inicio">
+    <section id="inicio" class="hero hero--play" aria-label="Inicio">
       <div class="hero__bg" aria-hidden="true"></div>
       <div class="hero__overlay" aria-hidden="true"></div>
-      <div class="hero__quick-links">
+      <div class="hero__quick-links hero__anim hero__anim--from-right">
         <a href="https://www.instagram.com/jisus._barberstyle/" class="hero__quick-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
           <svg class="hero__quick-icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
         </a>
@@ -57,57 +57,69 @@
         </a>
       </div>
       <div class="hero__inner">
-        <div class="hero__content">
-          <h1 class="hero__title hero__anim">Barberhouse Puerto Varas</h1>
-          <h2 class="hero__subtitle hero__anim">Cortes premium. Estilo que define tu imagen.</h2>
-          <div class="hero__actions hero__anim">
-            <a href="#" class="btn btn--hero-primary" data-booking>Reservar hora</a>
-            <a href="https://wa.me/56958259580" class="btn btn--hero-wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <div class="hero__layout">
+          <div class="hero__brand hero__anim hero__anim--from-left">
+            <img
+              class="hero__logo"
+              src="assets/logo.png"
+              alt="Jisus Barber Style — logotipo"
+              width="320"
+              height="320"
+              decoding="async"
+            />
+          </div>
+          <div class="hero__content">
+            <h1 class="hero__title hero__anim hero__anim--from-right">Barberhouse Puerto Varas</h1>
+            <h2 class="hero__subtitle hero__anim hero__anim--from-right">Cortes premium. Estilo que define tu imagen.</h2>
+            <div class="hero__actions hero__anim hero__anim--from-right">
+              <a href="#" class="btn btn--hero-primary" data-booking>Reservar hora</a>
+              <a href="https://wa.me/56958259580" class="btn btn--hero-wa" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+            </div>
           </div>
         </div>
       </div>
-      <a href="#intro-home" class="hero__scroll hero__scroll--enter" aria-label="Bajar a la presentación">
+      <a href="#intro-home" class="hero__scroll hero__anim hero__anim--from-up" aria-label="Bajar a la presentación">
         <span class="hero__scroll-line" aria-hidden="true"></span>
         <span class="hero__scroll-chevron" aria-hidden="true"></span>
       </a>
     </section>
 
-    <section id="intro-home" class="intro-home" aria-labelledby="intro-home-heading">
+    <section id="intro-home" class="intro-home inicio-zone" aria-labelledby="intro-home-heading">
       <div class="container intro-home__container">
         <h2 id="intro-home-heading" class="visually-hidden">Barberhouse Studio</h2>
         <div class="intro-home__grid">
           <div class="intro-home__text">
-            <p class="intro-home__lead intro-home__reveal">
+            <p class="intro-home__lead motion-reveal motion-reveal--from-left">
               Barberhouse Studio es un espacio personalizado donde tu estilo y tu imagen se llevan al siguiente nivel. Cada corte y servicio es una experiencia única.
             </p>
-            <p class="intro-home__barber intro-home__reveal intro-home__reveal--delay-1">
+            <p class="intro-home__barber motion-reveal motion-reveal--from-left motion-reveal--delay-1">
               <strong class="intro-home__barber-name">Sebastián Castillo</strong> — barbero principal, especialista en <strong class="intro-home__barber-skill">visagismo</strong> y <strong class="intro-home__barber-skill">asesoría de imagen</strong>.
             </p>
           </div>
-          <figure class="intro-home__media intro-home__reveal intro-home__reveal--delay-2">
+          <figure class="intro-home__media motion-reveal motion-reveal--from-right motion-reveal--delay-2">
             <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Ambiente de barbería premium" width="800" height="600" loading="lazy" />
           </figure>
         </div>
       </div>
     </section>
 
-    <section class="home-cta" aria-labelledby="home-cta-title">
+    <section class="home-cta inicio-zone" aria-labelledby="home-cta-title">
       <div class="container home-cta__inner">
-        <p id="home-cta-title" class="home-cta__text">Reserva tu hora en minutos y transforma tu look hoy mismo</p>
-        <a href="#" class="btn btn--home-cta" data-booking>Reservar hora</a>
+        <p id="home-cta-title" class="home-cta__text motion-reveal motion-reveal--from-left">Reserva tu hora en minutos y transforma tu look hoy mismo</p>
+        <a href="#" class="btn btn--home-cta motion-reveal motion-reveal--from-right motion-reveal--delay-1" data-booking>Reservar hora</a>
       </div>
     </section>
 
     <section id="servicios" class="section section--services" aria-labelledby="servicios-title">
       <div class="container container--services">
         <header class="services__head">
-          <h2 id="servicios-title" class="services__title">Servicios</h2>
-          <p class="services__subtitle">Servicios profesionales para tu estilo y cuidado personal</p>
+          <h2 id="servicios-title" class="services__title motion-reveal motion-reveal--from-bottom">Servicios</h2>
+          <p class="services__subtitle motion-reveal motion-reveal--from-bottom motion-reveal--delay-1">Servicios profesionales para tu estilo y cuidado personal</p>
         </header>
-        <ul class="services-grid">
+        <ul class="services-grid motion-stagger">
           <li class="service-card">
             <div class="service-card__media">
-              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=640&q=80" alt="" width="640" height="360" loading="lazy" />
+              <img src="assets/imagen1.jpg" alt="Corte de cabello — trabajo real" width="640" height="853" loading="lazy" />
             </div>
             <div class="service-card__body">
               <h3 class="service-card__name">Corte de cabello</h3>
@@ -118,7 +130,7 @@
           </li>
           <li class="service-card">
             <div class="service-card__media">
-              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=640&q=80" alt="" width="640" height="360" loading="lazy" />
+              <img src="assets/imagen3.jpg" alt="Arreglo y perfilado — trabajo real" width="640" height="853" loading="lazy" />
             </div>
             <div class="service-card__body">
               <h3 class="service-card__name">Arreglo de barba</h3>
@@ -129,7 +141,7 @@
           </li>
           <li class="service-card">
             <div class="service-card__media">
-              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=640&q=80" alt="" width="640" height="360" loading="lazy" />
+              <img src="assets/imagen1.jpg" alt="Corte + barba — trabajo real" width="640" height="853" loading="lazy" />
             </div>
             <div class="service-card__body">
               <h3 class="service-card__name">Corte + barba</h3>
@@ -151,7 +163,7 @@
           </li>
           <li class="service-card">
             <div class="service-card__media">
-              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=640&q=80" alt="" width="640" height="360" loading="lazy" />
+              <img src="assets/imagen2.jpg" alt="Corte + diseño freestyle — trabajo real" width="640" height="853" loading="lazy" />
             </div>
             <div class="service-card__body">
               <h3 class="service-card__name">Corte + diseño (freestyle)</h3>
@@ -183,7 +195,7 @@
             </div>
           </li>
         </ul>
-        <div class="services__cta" aria-labelledby="services-cta-title">
+        <div class="services__cta motion-reveal motion-reveal--from-bottom" aria-labelledby="services-cta-title">
           <p id="services-cta-title" class="services__cta-text">Reserva tu hora en minutos</p>
           <a href="#" class="btn btn--services-availability" data-booking>Ver disponibilidad</a>
         </div>
@@ -198,8 +210,8 @@
       -->
       <div class="container container--gallery">
         <header class="gallery__head">
-          <h2 id="galeria-title" class="gallery__title">Galería</h2>
-          <p class="gallery__subtitle">Mira algunos de nuestros resultados</p>
+          <h2 id="galeria-title" class="gallery__title motion-reveal motion-reveal--from-bottom">Galería</h2>
+          <p class="gallery__subtitle motion-reveal motion-reveal--from-bottom motion-reveal--delay-1">Trabajos reales de nuestro estudio</p>
         </header>
 
         <div id="instagram-feed" class="instagram-feed">
@@ -207,39 +219,27 @@
         </div>
 
         <div class="gallery-manual">
-          <div class="gallery-grid">
+          <div class="gallery-grid gallery-grid--real motion-stagger">
             <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" alt="Interior de barbería" width="800" height="600" loading="lazy" />
+              <img src="assets/imagen1.jpg" alt="Corte de cabello con degradado y contorno preciso" width="800" height="1067" loading="lazy" />
               <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
             </a>
             <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" alt="Herramientas de barbero" width="800" height="600" loading="lazy" />
+              <img src="assets/imagen2.jpg" alt="Corte con degradado y diseño personalizado en el lateral" width="800" height="1067" loading="lazy" />
               <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
             </a>
             <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" alt="Corte y barba" width="800" height="600" loading="lazy" />
-              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
-            </a>
-            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" alt="Estación de barbería" width="800" height="600" loading="lazy" />
-              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
-            </a>
-            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" alt="Servicio de corte" width="800" height="600" loading="lazy" />
-              <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
-            </a>
-            <a href="https://www.instagram.com/jisus._barberstyle/" class="gallery-item" target="_blank" rel="noopener noreferrer">
-              <img src="https://images.unsplash.com/photo-1556228578-8c89e6adf883?auto=format&fit=crop&w=800&q=80" alt="Cuidado y estilo" width="800" height="600" loading="lazy" />
+              <img src="assets/imagen3.jpg" alt="Degradado alto skin fade — perfil" width="800" height="1067" loading="lazy" />
               <span class="gallery-item__overlay"><span class="gallery-item__label">Ver en Instagram</span></span>
             </a>
           </div>
         </div>
 
-        <div class="gallery-instagram-btn-wrap">
+        <div class="gallery-instagram-btn-wrap motion-reveal motion-reveal--from-bottom">
           <a href="https://www.instagram.com/jisus._barberstyle/" class="btn btn--gallery-ig" target="_blank" rel="noopener noreferrer">Ver más en Instagram</a>
         </div>
 
-        <div class="gallery__cta">
+        <div class="gallery__cta motion-reveal motion-reveal--from-bottom motion-reveal--delay-1">
           <p class="gallery__cta-text">¿Listo para tu próximo look?</p>
           <a href="#" class="btn btn--gallery-book" data-booking>Reservar ahora</a>
         </div>
@@ -249,11 +249,11 @@
     <section id="sobre" class="section section--about">
       <div class="container">
         <header class="section__head section__head--left">
-          <h2 class="section__title">Sobre la barbería</h2>
-          <p class="about-brand">Barberhouse Studio</p>
+          <h2 class="section__title motion-reveal motion-reveal--from-bottom">Sobre la barbería</h2>
+          <p class="about-brand motion-reveal motion-reveal--from-bottom motion-reveal--delay-1">Barberhouse Studio</p>
         </header>
         <div class="about-grid">
-          <div class="about-grid__text">
+          <div class="about-grid__text motion-reveal motion-reveal--from-left">
             <div class="about-text">
               <p>
                 Barberhouse Studio es una barbería personalizada enfocada en brindar una experiencia superior a cada cliente, transformando cada corte de cabello en un momento único.
@@ -271,7 +271,7 @@
               <p class="about-signature__tagline">Especialista en visagismo y asesoría de imagen</p>
             </div>
           </div>
-          <figure class="about-grid__media">
+          <figure class="about-grid__media motion-reveal motion-reveal--from-right motion-reveal--delay-1">
             <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=900&q=80" alt="Detalle de servicio en barbería premium" width="900" height="675" loading="lazy" />
             <figcaption class="visually-hidden">Barberhouse Studio — ambiente de trabajo</figcaption>
           </figure>
@@ -283,10 +283,10 @@
       <div class="section--classes__bg" aria-hidden="true"></div>
       <div class="container section--classes__inner">
         <header class="section__head">
-          <h2 class="section__title">Clases personalizadas</h2>
-          <p class="section__lead">Aprendizaje de barbería y técnicas modernas, pensado para quienes quieren profundizar en el oficio.</p>
+          <h2 class="section__title motion-reveal motion-reveal--from-bottom">Clases personalizadas</h2>
+          <p class="section__lead motion-reveal motion-reveal--from-bottom motion-reveal--delay-1">Aprendizaje de barbería y técnicas modernas, pensado para quienes quieren profundizar en el oficio.</p>
         </header>
-        <div class="classes-card">
+        <div class="classes-card motion-reveal motion-reveal--from-bottom motion-reveal--delay-2">
           <p>Próximamente más información sobre modalidades y fechas.</p>
           <a href="https://wa.me/56958259580?text=Hola%2C%20quiero%20consultar%20por%20las%20clases%20personalizadas." class="btn btn--outline-light" target="_blank" rel="noopener noreferrer">Consultar por WhatsApp</a>
         </div>
@@ -296,10 +296,10 @@
     <section id="productos" class="section section--products">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">Productos</h2>
-          <p class="section__lead">Ceras, aceites y cuidado capilar — disponibles en sala.</p>
+          <h2 class="section__title motion-reveal motion-reveal--from-bottom">Productos</h2>
+          <p class="section__lead motion-reveal motion-reveal--from-bottom motion-reveal--delay-1">Ceras, aceites y cuidado capilar — disponibles en sala.</p>
         </header>
-        <ul class="products-grid">
+        <ul class="products-grid motion-stagger">
           <li class="product-card">
             <div class="product-card__image">
               <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?auto=format&fit=crop&w=500&q=80" alt="Cera y fijación" width="500" height="400" loading="lazy" />
@@ -322,31 +322,44 @@
             <p class="product-card__meta">Consulta en local</p>
           </li>
         </ul>
-        <p class="products-note">Sin venta online — pregunta en tu próxima visita.</p>
+        <p class="products-note motion-reveal motion-reveal--from-bottom">Sin venta online — pregunta en tu próxima visita.</p>
       </div>
     </section>
 
     <section id="contacto" class="section section--contact">
       <div class="container">
         <header class="section__head">
-          <h2 class="section__title">Contacto</h2>
+          <h2 class="section__title motion-reveal motion-reveal--from-bottom">Contacto</h2>
         </header>
         <div class="contact-layout">
-          <div class="contact-info">
+          <div class="contact-info motion-reveal motion-reveal--from-left">
             <address class="contact-address">
               <strong>Dirección</strong><br />
-              Independencia 98, Llanquihue, Puerto Varas, Chile
+              Independencia 98, 5550434 Llanquihue, Puerto Varas, Los Lagos
             </address>
+            <p class="contact-map-link">
+              <a
+                href="https://www.google.com/maps/search/?api=1&amp;query=Independencia+98,+5550434+Llanquihue,+Puerto+Varas,+Los+Lagos,+Chile"
+                class="link-accent"
+                target="_blank"
+                rel="noopener noreferrer"
+              >Abrir en Google Maps</a>
+            </p>
             <p class="contact-wa">
               <strong>WhatsApp</strong><br />
               <a href="tel:+56958259580" class="link-muted">+56 9 5825 9580</a>
             </p>
             <a href="https://wa.me/56958259580" class="btn btn--primary btn--contact" target="_blank" rel="noopener noreferrer">Abrir WhatsApp</a>
           </div>
-          <div class="map-embed" aria-label="Mapa — embed de Google Maps">
-            <div class="map-embed__placeholder">
-              <p>Aquí irá el mapa de Google Maps (embed).</p>
-            </div>
+          <div class="map-embed motion-reveal motion-reveal--from-right motion-reveal--delay-1">
+            <iframe
+              class="map-embed__frame"
+              title="Mapa — Independencia 98, Llanquihue, Puerto Varas"
+              src="https://maps.google.com/maps?q=Independencia+98,+5550434+Llanquihue,+Puerto+Varas,+Los+Lagos,+Chile&amp;hl=es&amp;z=16&amp;output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
       </div>
